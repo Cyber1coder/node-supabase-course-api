@@ -1,0 +1,27 @@
+{
+  "name": "supabase-course-api",
+  "version": "1.0.0",
+  "main": "middleware.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber1coder/node-supabase-course-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber1coder/node-supabase-course-api/issues"
+  },
+  "homepage": "https://github.com/Cyber1coder/node-supabase-course-api#readme",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  }
+}
