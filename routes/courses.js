@@ -3,7 +3,7 @@ const router = express.Router();
 const supabase = require("../middleware/validateEnrollment")
 
 router.get("/courses",async(req,res)=>{
-    const{dat,error} = await supabase
+    const{data,error} = await supabase
     .from("courses")
     .select("*")
 
@@ -23,7 +23,7 @@ router.get("/courses/:id/enrollments",
         const courseId = req.params.id;
         
         const {data,error} = await supabase
-            .from("enrollments"
+            .from("enrollments")
             .select("*")
             .eq("course_id",courseid);
 
